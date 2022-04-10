@@ -6,10 +6,10 @@ def pingar_servidor(host):
 
     return {
         'host': host,
-        'avg_latency': ping_result.rtt_avg_ms,
-        'min_latency': ping_result.rtt_min_ms,
-        'max_latency': ping_result.rtt_max_ms,
-        'packet_loss': ping_result.packet_loss
+        'avg_latency': ping_result.rtt_avg_ms, #Bad = Greater than 100ms, Acceptable = 40-100ms, Good = 20-40ms
+        'min_latency': ping_result.rtt_min_ms, #minimo de latencia
+        'max_latency': ping_result.rtt_max_ms, #maximo de latencia
+        'packet_loss': ping_result.packet_loss #perda de pacote
     }
 
 #lista com os servidores a serem testados
