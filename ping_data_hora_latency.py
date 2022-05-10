@@ -1,6 +1,6 @@
 from pythonping import ping
 import datetime
-valores_pin = []
+
 
 
 #função que ira realizar o ping e retornar os dados coletados
